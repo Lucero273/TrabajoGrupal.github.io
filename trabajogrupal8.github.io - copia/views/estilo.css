@@ -1,0 +1,32 @@
+body{
+    background: rgb(253, 219, 219);
+}
+article{
+    
+    font-size: 1.5cm;
+  
+}
+
+h2{
+    
+    font: oblique bold 120% cursive;
+    font-size: 1.4cm;
+}
+h3{
+    
+    font-size: 150%;
+    letter-spacing: 2px;
+    font-family: cursive;
+}
+ul{
+    background: #c4db9e;
+    -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  display:inline-block;
+  font-size: 1cm;
+  float:none;
+	text-align:center;
+
+
+}
