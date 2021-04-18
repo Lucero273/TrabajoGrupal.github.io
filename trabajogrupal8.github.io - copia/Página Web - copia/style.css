@@ -65,10 +65,10 @@ p {
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: white;
+	color: rgb(255, 255, 255);
 }
 .brand h1 span {
-	color: rgb(165, 248, 223);
+	color: rgb(100, 236, 207);
 }
 
 /* Header section */
@@ -82,7 +82,7 @@ p {
 }
 #header .header {
 	min-height: 8vh;
-	background-color: rgba(247, 157, 172, 0.26);
+	background-color: rgba(199, 79, 99, 0.651);
 	transition: .3s ease background-color;
 }
 #header .nav-bar {
