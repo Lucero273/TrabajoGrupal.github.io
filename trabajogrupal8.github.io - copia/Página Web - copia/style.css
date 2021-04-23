@@ -71,7 +71,7 @@ p {
 	color: rgb(100, 236, 207);
 }
 
-/* Header section */
+/* Sección del header */
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -196,9 +196,9 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
-/* End Header section */
+/* Fin de la seccion del header */
 
-/* Hero Section */
+/* sección principal */
 #hero {
 	background-image: url(./img/15981.jpg);
 	background-size: cover;
@@ -262,9 +262,9 @@ p {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
+/* fin de la sección principal */
 
-/* Services Section */
+/* seccion generos */
 #services .services {
 	flex-direction: column;
 	text-align: center;
@@ -324,9 +324,9 @@ p {
 	color: white;
 	text-align: left;
 }
-/* End Services Section */
+/* fin de la seccion generos */
 
-/* Projects section */
+/* top musicas*/
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
@@ -397,9 +397,9 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
-/* End Projects section */
+/* fin de la seccion top musicas */
 
-/* About Section */
+/* musica de los 80 */
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
@@ -445,9 +445,8 @@ p {
 	border: 7px solid rgb(211, 139, 154);
 	z-index: -1;
 }
-/* End About Section */
+/* fin de la sección música de los 80 */
 
-/* contact Section */
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -488,7 +487,7 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
-/*End contact Section */
+
 
 /* Footer */
 #footer {
@@ -667,9 +666,9 @@ p {
 	}
 	/* End contact  */
 }
-/* End Media Query For Tablet */
 
-/* Media Query For Desktop */
+
+
 @media only screen and (min-width: 1200px) {
 	/* header */
 	#header .hamburger {
@@ -691,11 +690,11 @@ p {
 	#header .nav-list ul a:after {
 		display: none;
 	}
-	/* End header */
+	
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */
+/* fin del footer */
