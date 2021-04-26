@@ -1,0 +1,21 @@
+body{
+    background-color: white;
+}
+header{
+    width: 100%;
+    background-color: #eedab8;
+    margin: auto;
+}
+.menu > li{
+    float: left
+}
+.menu li a{
+    background-color: #eedab8;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.menu li a :hover{
+    color: rgb(241,247,159);
+}
