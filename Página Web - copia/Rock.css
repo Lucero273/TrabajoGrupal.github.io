@@ -1,0 +1,28 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+*{
+    margin: 0;
+    padding:0;
+    background: rgb(255, 254, 254);
+}
+.logo h1 span {
+	color: rgb(100, 248, 216);
+    background: #29323c;
+}
+
+.logo h1 {
+    background: #29323c;
+	font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+    padding:10px 40px;
+    
+}
+.titulo-principal{
+    font-size:80px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 300;
+    color:rgb(230, 107, 107);
+    text-align: center;
+    padding-top: 70px;
+}
