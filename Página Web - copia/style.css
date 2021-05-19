@@ -213,7 +213,7 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(63, 61, 59, 0.863);
+	background-color: rgba(34, 30, 30, 0.863);
 	opacity: .7;
 	z-index: -1;
 }
