@@ -143,7 +143,7 @@ p {
 }
 /* FIN */
 /* ICONO DEL MENU */
-#header .hamburger {
+#header .menu_generos {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
@@ -161,19 +161,19 @@ p {
 /* FIN  ICONO DEL MENU */
 
 /* ANIMACION DEL ICONO MENU */
-#header .hamburger:after {
+#header .menu_generos:after {
 	position: absolute;
 	content: '';
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
 	border: 3px solid white;
-	animation: hamburger_puls 1s ease infinite;
+	animation: menu_generos_puls 1s ease infinite;
 }
 /* FIN DE ANIMACION MENU */
 
 /* FONDO DEL ICONO MENU */
-#header .hamburger .bar {
+#header .menu_generos .bar {
 	height: 2px;
 	width: 30px;
 	position: relative;
@@ -183,8 +183,8 @@ p {
 /* FIN DEL FONDO DEL ICONO MENU */
 
 /* BARRAS DEL ICONO MENU */
-#header .hamburger .bar::after,
-#header .hamburger .bar::before {
+#header .menu_generos .bar::after,
+#header .menu_generos .bar::before {
 	content: '';
 	position: absolute;
 	height: 100%;
@@ -195,16 +195,16 @@ p {
 	transition-property: top, bottom;
 }
 
-#header .hamburger .bar::after {
+#header .menu_generos .bar::after {
 	top: 8px;
 }
-#header .hamburger .bar::before {
+#header .menu_generos .bar::before {
 	bottom: 8px;
 }
-#header .hamburger.active .bar::before {
+#header .menu_generos.active .bar::before {
 	bottom: 0;
 }
-#header .hamburger.active .bar::after {
+#header .menu_generos.active .bar::after {
 	top: 0;
 }
 /* FIN BARRAS DEL ICONO MENU */
@@ -369,7 +369,7 @@ p {
 /* End Footer */
 
 /* Keyframes */
-@keyframes hamburger_puls {
+@keyframes menu_generos_puls {
 	0% {
 		opacity: 1;
 		transform: scale(1);
@@ -456,7 +456,7 @@ p {
 
 @media only screen and (min-width: 1200px) {
 	/* header */
-	#header .hamburger {
+	#header .menu_generos {
 		display: none;
 	}
 	#header .nav-list ul {
