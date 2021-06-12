@@ -4,32 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="Rock.css">
+    <link rel="stylesheet"  href="Rock2.css">
     <link rel="icon" href="img/musical.ico.png">
     <title>Rock</title>
 </head>
-<body>
+<body id="cuerpo">
     
   <!-- Sección  Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero"><h1><span>LA</span>LA <span>LAND</span>Music</h1></a>
-        </div>
-        <div class="nav-list">
-          <div class="menu_generos"><div class="bar"></div></div>
-          <ul>
-            <li><a href="index.html" data-after="Home">Inicio</a></li>
-            <li><a href="Pop.html"  data-after="Service">Pop</a></li>
-            <li><a href="Salsa.html"  data-after="Projects">Salsa</a></li>
-            <li><a href="#"  data-after="About">Rock</a></li>
-            <li><a href="Reggae.html"  data-after="Contact">Reggae</a></li>
-          </ul>
-        </div>
-      </div>
+  <header>
+    <div class="navegacion">
+       <h1 class="logo"><span>LA</span>LA <span>LAND</span>Music</h1>
     </div>
-  </section>
+    <nav id="menu-principal" class="menu-principal">
+     <ul>
+         <li><a href="index.html">Inicio</a></li>
+         <li><a href="Pop.html">Pop</a></li>
+         <li><a href="Salsa.html">Salsa</a></li>
+         <li><a href="#">Rock</a></li>
+         <li><a href="Reggae.html">Reggae</a></li>
+       </ul>
+    </nav>
+    <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
+       <div class="hamburger"></div>
+    </div>
+ </header>
   <!-- Fin de la seccion  Header -->
 
 
@@ -45,7 +43,10 @@
     </div>
   </section>
   <!-- Fin de la seccion principal  -->
+  
+<section id="cambiar-fondo1">
 <section id="services">
+  <button class="cambiarfondo" onclick="javascript:cambiarFondo1();">Cambia el fondo de esta sección!!</button>
   <div class="services container">
     <div class="service-top">
       <h1 class="section-title">¿QUÉ<span> ES?</span><br> 💿📀💿</h1><br>
@@ -53,14 +54,15 @@
       <p class="que_es">Típicamente, el Rock es un género reconocido por la predominancia de la guitarra eléctrica, con canciones de compás 4/4 y una      estructura verso-estribillo. Pero en su evolución particular es difícil hoy en día dar con características realmente comunes.
 
         En líneas generales las temáticas de sus canciones apuntan a lo social, lo político y también el amor y la emoción, haciendo énfasis sobre todo en aspectos como la composición, la performance en vivo y la originalidad.</p><br>
-        <img class="guitarra" src="img/camb.jpg">
+        <img class="guitarra" src="img/rockand.jpg">
     </div></div>
   </section>
+</section>
   <!-- Seción de géneros -->
   <section id="services">
     <div class="services container">
       <div class="service-top">
-        <h1 class="section-title">VEAMOS<span>AlGUNOS </span> GRUPOS!<br>💿📀💿</h1>
+        <h1 class="section-title">VEAMOS<span> AlGUNOS </span> GRUPOS!<br>💿📀💿</h1>
         <p class="subtitulo"><b>¿YA CONOCIAS ALGUNA DE ESTAS BANDAS?</b> </p>
       </div>
       <div class="service-bottom">
@@ -82,7 +84,7 @@
         <div class="service-item">
           <div class="icon"><img src="img/rolling st.jpg"/></div>
           <h2>The Rolling Stones</h2>
-          <p>Banda británica de rock. Una de las más grandes e influyentes bandas de toda la historia del rock</p>
+          <p>Banda británica de rock. Una de las más grandes e influyentes de toda la historia del rock</p>
         </div>
         <div class="service-item">
             <div class="icon"><img src="img/queen.jpg"/></div>
@@ -102,7 +104,7 @@
           <div class="service-item">
             <div class="icon"><img src="img/imagine dragons.jpg"/></div>
             <h2>Imagine Dragons</h2>
-            <p>Agrupación originaria de EE.UU, oscila entre los géneros del Rock alternativo hasta el Pop Rock.</p>
+            <p>Agrupación de EE.UU, oscila entre los géneros del Rock alternativo hasta el PopRock.</p>
           </div>
           <div class="service-item">
             <div class="icon"><img src="img/acdc.jpg"/></div>
@@ -112,7 +114,7 @@
           <div class="service-item">
             <div class="icon"><img src="img/led zepellin.jpg"/></div>
             <h2>Led zepellin</h2>
-            <p>Surgido en los años 60 en el R.Unido, la influencia del grupo es incalculable en la historia del rock.</p>
+            <p>Surgido en los años 60 en el R.Unido, su es incalculable en la historia del rock.</p>
           </div>
           <div class="service-item">
             <div class="icon"><img src="img/KISS.jpg"/></div>
@@ -122,17 +124,17 @@
           <div class="service-item">
             <div class="icon"><img src="img/the cure.jpg"/></div>
             <h2>The Cure</h2>
-            <p>Es una de las bandas más prominentes surgidas en la Inglaterra de finales de los años 70.</p>
+            <p>Es una de las bandas más prominentes de la Inglaterra de finales de los años 70.</p>
           </div>
           <div class="service-item">
             <div class="icon"><img src="img/u2.jpg"/></div>
             <h2>U2</h2>
-            <p>Es una banda de rock alternativo. Su cancionero va desde el rock más clásico hasta el pop más redondo.</p>
+            <p>Es una banda de rock alternativo. Su cancionero va desde el rock clásico hasta el pop .</p>
           </div>
           <div class="service-item">
             <div class="icon"><img src="img/iron_maiden.jpg"/></div>
             <h2>Iron Maiden</h2>
-            <p>Banda británica de heavy metal, una de las más destacadas de los ochenta, liderada por Steve Harris.</p>
+            <p>Banda británica de heavy metal, una de las más destacadas de los ochenta, liderada por Harris.</p>
           </div>
           <div class="service-item">
             <div class="icon"><img src="img/Apocalyptica.jpg"/></div>
@@ -142,58 +144,61 @@
           <div class="service-item">
             <div class="icon"><img src="img/the 1975.jpg"/></div>
             <h2>The 1975</h2>
-            <p>Es una banda de rock alternativo. el nombre fue inspirado por unos garabatos en un libro de poesía. </p>
+            <p>Es una banda de rock alternativo. el nombre fue inspirado por un libro de poesía. </p>
           </div>
       </div>
     </div>
   </section>
   <!-- musica -->
+  <section id="cambiar-fondo2">
   <section id="services">
+    <button class="cambiarfondo" onclick="javascript:cambiarFondo2();">Cambia el fondo de esta sección!!</button>
     <div class="services container">
       <div class="service-top">
-        <h1 class="section-title">ALGUNAS <span>CANCIONES</span><br>💿📀💿</h1>
+        <h1 class="section-title">TIENES QUE <span>ESCUCHAR</span> ESTAS CANCIONES!<br>💿📀💿</h1>
       </div>
       <div id="canciones">
       <div class="service-bottom">
         <div class="service-item">
-          <h2 class="titulocancion">Hotel California-Eagles</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=X_9TI5zmS-A">Hotel California-Eagles</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">  Stairway to Heaven-Led.Z</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=xbhCPt6PZIU"> Stairway to Heaven-Led.Z</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">Imagine	- John Lennon</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=rxCWSHzxjlU"> Imagine - John Lenon</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">Hey Jude  -  The Beatles</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=rxCWSHzxjlU"> Hey Jude - The Beatles</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">Jailhouse Rock - Elvis.P</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=gj0Rz-uP4Mk"> Jailhouse - Elvis.P</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">Let It Be	- The Beatles</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=7P6X3IWLECY"> Let it be - The Beatles</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">My Girl -	The Temptations</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=Z40O-bdghuQ"> My girl - The Temptations</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">Dream On -	Aerosmith</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=sZfZ8uWaOFI"> Dream on - Aerosmith</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">Crazy	Patsy - Cline</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=MbnrdCS57d0"> Crazy Patsy - Cline</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">Your Song -	Elton John</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=jGd4W7m6J4o"> Your Song - Elton John</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">We Are the Champions</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=KXw8CRapg7k"> We are the champions</a></h2>
         </div>
         <div class="service-item">
-          <h2 class="titulocancion">When Doves Cry - Prince</h2>
+          <h2><a target="_blank" href="https://www.youtube.com/watch?v=UG3VcCAlUgE"> Wen doves cry - Prince</a></h2>
         </div>
     </div>
   </div>
 </div>
+</section>
 </section>
 
   <!-- Fin de la seccion generos -->
@@ -206,6 +211,18 @@
     <source src="music/Rod Stewart - Young Turks.mp3"/>
   </audio>
   <!--Reproductor de musica--> 
+
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">¿CUÁL ES LA MEJOR <span> BANDA DE ROCK</span> DE TODOS LOS TIEMPOS? :)<br>💿📀💿</h1><br>
+        <p class="subtitulo"><b>THE BEATLES!!</b> </p><br>
+        <p class="que_es">El mítico cuarteto de Liverpool es por muchos la mejor banda de rock que ha existido. Ha sido una de las bandas más alabadas por la crítica y admiradas desde su época activa, en la década de los 60. Reconocida como la más exitosa comercialmente y la más alabada por la crítica en la historia de la música popular y de la música rock. La naturaleza de su enorme popularidad, que había emergido primeramente con la moda de la «beatlemanía», se transformó al tiempo que sus composiciones se volvieron más sofisticadas. Llegando a ser percibidos como la encarnación de los ideales progresistas, extendiendo su influencia en las revoluciones sociales y culturales de la década de 1960.</p><br>
+          <img class="guitarra" src="img/beatles.png">
+          <img class="guitarra" src="img/the-beatles.jpg">
+      </div></div>
+    </section>
+
   <!-- Footer -->
   <section id="footer">
     <div class="footer container">
@@ -228,6 +245,7 @@
       <p>¡¡Siguenos en nuestras redes sociales!!</p>
     </div>
   </section>
+  <script src="rock2.js"></script>
   <!-- End Footer -->
 </body>
 </html>
