@@ -31,17 +31,6 @@ img {
     border-radius: 40%;
 	
 }
-img.guitarra {
-	height: 100%;
-	width: 100%;           
-	object-fit: cover;
-	height: 173px;
-	width: 301px;
-	margin-bottom: 20px;
-    margin:0 auto;
-	border-radius: 10px;
-    
-}
 p {
 	color: black;
 	font-size: 1.4rem;
@@ -49,6 +38,7 @@ p {
 	line-height: 2.5rem;
 	font-weight: 300;
 	letter-spacing: .05rem;
+	text-align: center;
 }
 #services p.que_es{
 	color: black;
@@ -68,7 +58,7 @@ p {
 	color:#000000 ;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-	letter-spacing: .2rem;
+	letter-spacing: .1rem;
 	text-align: center;
 }
 .section-title span {
@@ -79,6 +69,7 @@ p {
 	font-size: 3rem;
 	text-transform: uppercase;
 	color: rgb(255, 255, 255);
+	text-align: center;
 }
 .brand h1 span {
 	color: rgb(100, 236, 207);
@@ -292,7 +283,6 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	
 }
 
 /* titulos y contenido de las bandas (cards) */
@@ -325,9 +315,10 @@ p {
 	border-color:#000000 ;
 }
 #services #canciones .service-bottom .service-item h2.titulocancion{
-	 color:#ee4242 ;
+	 color:#2dfd80 ;
+	 text-align: center;
  }
-
+  
 /* ---------- */
 /* Footer */
 #footer {
@@ -346,6 +337,7 @@ p {
 	letter-spacing: .1rem;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 #footer .social-icon {
 	display: flex;
