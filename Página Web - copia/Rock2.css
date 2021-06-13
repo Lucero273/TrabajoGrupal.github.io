@@ -11,17 +11,7 @@ html {
 	scroll-behavior: smooth;
     background-color: #ffffff;
 }
-button{
-    margin-top: 9px; 
-    margin-right: 5px;
-    float: right;
-    font-size: 15px;
-    border:1px solid #020202;
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #ADEFFF ;
-}
+
 /* links sin decoración */
 a {
 	text-decoration: none;
@@ -36,6 +26,7 @@ a {
 	justify-content: center;
 }
 /* ------------------- */
+
 img {
 	height: 100%;
 	width: 100%;
@@ -117,6 +108,7 @@ header::after{
     right: 0;
     position: absolute;
     background-color: black;
+	width: 35%;
     clip-path:circle(0px at top right);
     transition: clip-path ease-in-out 700ms;
     z-index: 100;
@@ -135,6 +127,7 @@ header::after{
     display: block;
     padding: 2em 6em;
     text-decoration: none;
+	text-align: center;
 }
 /* HOVER Y ANIMACIÓN DE LOS ITEMS DEL MENU (JS)*/
 .menu-principal a:hover,
@@ -144,7 +137,7 @@ header::after{
 .menu-toggle{
     padding:1em;
     position: absolute;
-    top:.9em;
+    top:1.9em;
     right: .5em;
 }
 .menu-open .hamburger{
@@ -163,7 +156,7 @@ header::after{
    display: block;
    background: #ebebd3;
    height: 3px;
-   width: 1.75em;
+   width: 2.75em;
    border-radius: 3px;
    transition: all ease-in-out 500ms;
 }
@@ -173,9 +166,8 @@ header::after{
 .hamburger::after{
     transform:translateY(3px);
 }
-
-
 /* Fin de la seccion del header */
+
 
 /* sección principal */
 #hero {
@@ -203,18 +195,19 @@ header::after{
 	justify-content: flex-start;
     margin-bottom: 2px;
 }
+
+
 /* titulo principal y tamaño en cel */
 #hero h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
 	position: relative;
-    color:#Fff;
-	
+    color:#Fff;	
 }
 /* fin */
-
 /* fin de la sección principal */
+
 
 /* seccion generos */
 /* orden de las cards */
@@ -243,7 +236,7 @@ header::after{
 	justify-content: center;
 	flex-direction: column;
 	padding: 30px;
-    border:2px solid #daabdb;
+    border:3px solid white ;
 	background-size: cover;
 	margin: 10px 2%;
 	position: relative;
@@ -257,7 +250,6 @@ header::after{
 	top: 0;
 	/* height: 100%;
 	width: 100%; */
-	
 }
 
 /* titulos y contenido de las bandas (cards) */
@@ -266,40 +258,47 @@ header::after{
 	width: 100px;
 	margin-bottom: 20px;
     margin:0 auto;
-
 }
 #services .service-item{
-    background: #fff;
+    background: #191919;
 }
 #services .service-item h2 {
 	font-size: 2rem;
-	color: #1B9AAA;
+	color: #c8cc73e8 ;
 	margin-bottom: 10px;
     margin-top:12px;
-	text-transform: uppercase;
-    
+	text-transform: uppercase; 
 }
 #services .service-item p {
-	color: #1F363D;
+	color:whitesmoke ;
 	text-align: left;
 }
 /* fin */
 /* fin de la seccion generos */
+
 
 /* canciones */
 #services #canciones .service-bottom .service-item{
 	border-radius: 60px;
 	padding:10px;
 	border-color:#ff0707 ;
+	background:#f7ef9281;
+}
+#canciones .service-item a{
+   color:#191919;
+   
 }
 #services #canciones .service-bottom .service-item:hover{
-	background: rgb(229, 240, 200);
+	background:rgb(229, 240, 200);
 }
-/* #services #canciones .service-bottom .service-item h2.titulocancion{
-	 color:#000 ;
- } */
 
+.dark-mode{
+	background:#121212;
+	color: white !important;
+}
 /* ---------- */
+
+
 /* Footer */
 .brand h1 {
 	font-size: 3rem;
@@ -348,6 +347,7 @@ header::after{
 }
 /* End Footer */
 
+
 /* Keyframes */
 @keyframes menu_generos_puls {
 	0% {
@@ -382,7 +382,8 @@ header::after{
 }
 /* End Keyframes */
 
-/* Media Query For Tablet */
+
+/* Media Query para Tablet */
 @media only screen and (min-width: 768px) {
 	
 	h1.section-title {
@@ -393,46 +394,9 @@ header::after{
 	#hero h1 {
 		font-size: 7rem;
 	}
-	/* End Hero */
-
-
-
-	/* contact  */
-	#contact .contact {
-		flex-direction: column;
-		padding: 100px 0;
-		align-items: center;
-		justify-content: center;
-		min-width: 20vh;
-	}
-	#contact .contact-items {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin: 0;
-	}
-	#contact .contact-item {
-		width: 30%;
-		margin: 0;
-		flex-direction: row;
-	}
-	#contact .contact-item .icon {
-		height: 100px;
-		width: 100px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
-	#contact .contact-item .contact-info {
-		width: 100%;
-		text-align: left;
-		padding-left: 20px;
-	}
-	/* End contact  */
 }
 
-@media(min-width:816px){
+@media(min-width:910px){
     .menu-toggle{
         display: none;
     }
