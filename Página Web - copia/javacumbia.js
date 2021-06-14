@@ -59,3 +59,17 @@ menu_item.forEach((item) =>{
         mobile_menu.classList.toggle('active');
     });
 });
+
+function activarDarkMode() {
+    
+    const fondoWeb=document.body;
+    const mainContenedor=document.querySelector('main.contenedor');
+    
+    fondoWeb.classList.toggle("dark-mode");
+    mainContenedor.classList.toggle("dark-mode");
+    mainContenedor.classList.toggle('sombra-dark-mode');
+    formulario.classList.toggle('formulario-dark-mode');
+}
+const botonDarkMode=document.querySelector('.boton-dark-mode');
+botonDarkMode.addEventListener('click', activarDarkMode);
+
