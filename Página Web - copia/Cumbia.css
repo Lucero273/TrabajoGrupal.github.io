@@ -41,7 +41,7 @@ p {
 	text-align: center;
 }
 #services p.que_es{
-	color: black;
+	color:#1f363d;
 	font-size: 2rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
@@ -51,11 +51,12 @@ p {
 }
 #services p.subtitulo{
 	font-size: 2rem;
+	color: #1f363d;
 }
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
-	color:#000000 ;
+	color: red ;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
@@ -320,6 +321,12 @@ p {
  }
   
 /* ---------- */
+/*dark-moon*/
+.dark-mode {
+    background: black;
+    color: white;
+}
+/*fin-dark-moon*/
 /* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -407,9 +414,7 @@ p {
 		font-size: 7rem;
 	}
 	/* End Hero */
-
-
-
+                                                            
 	/* contact  */
 	#contact .contact {
 		flex-direction: column;
