@@ -17,6 +17,7 @@ function activarDarkMode() {
     const titulo2 = document.querySelectorAll(".section-title")[1];
     const titulo3 = document.querySelectorAll(".section-title")[2];
     const titulo4 = document.querySelectorAll(".section-title")[3];
+    const titulo5 = document.querySelectorAll(".section-title")[4];
     const parrafo1 = document.querySelector("p.que_es");
     const parrafo2 = document.querySelectorAll("p.que_es")[1];
     const subtitulo = document.querySelector(".subtitulo");
@@ -25,6 +26,7 @@ function activarDarkMode() {
 
     titulo1.classList.toggle('dark-mode');
     titulo4.classList.toggle('dark-mode');
+    titulo5.classList.toggle('dark-mode');
     parrafo1.classList.toggle('dark-mode');
     parrafo2.classList.toggle('dark-mode');
     subtitulo.classList.toggle('dark-mode');
@@ -37,3 +39,47 @@ function activarDarkMode() {
 const botonDarkMode = document.querySelector('.boton-dark-mode');
 botonDarkMode.addEventListener('click', activarDarkMode);
 
+//SLIDER
+
+var imagenes =new Array("img/loll.jpg","img/noticia4.png","img/maiden.png","img/fest.jpg","img/tourkiss.jpg","img/concierto.jpg");
+var posicion=0;
+var imagen=document.querySelector(".img");
+var btnDerecha=document.querySelector(".derecha");
+var btnIzquierda=document.querySelector(".izquierda");
+var btnPlay=document.querySelector("#play");
+var btnStop=document.querySelector("#stop");
+
+const INTERVALO=2000;
+var intervalo;
+imagen.style.backgroundImage='url('+imagenes[posicion]+')';
+
+function izquierda(){
+    if(posicion<=0){
+        posicion=imagenes.length-1;
+    }else{
+        posicion--;
+    }
+    imagen.style.backgroundImage='url('+imagenes[posicion]+')';
+}
+function derecha(){
+    if(posicion>= imagenes.length-1){
+        posicion=0;
+    }else{
+        posicion++;
+    }
+    imagen.style.backgroundImage='url('+imagenes[posicion]+')';
+}
+function playIntervalo(){
+    intervalo=setInterval(derecha,INTERVALO);
+    btnPlay.setAttribute('disabled',true);
+    btnStop.removeAttribute('disabled');
+}
+function stopIntervalo(){
+    clearInterval(intervalo);
+    btnPlay.removeAttribute('disabled');
+    btnStop.setAttribute('disabled',true);
+
+}
+
+btnPlay.addEventListener('click',playIntervalo);
+btnStop.addEventListener('click',stopIntervalo);
