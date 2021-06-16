@@ -108,3 +108,70 @@ function noPintar6(){
     document.getElementById("boton6").style.backgroundColor="#cb3234";
     document.getElementById("boton6").style.color="white";
 }
+
+
+
+
+//-----------------------inicion de la seccion comentarios--------------------------------------//
+
+const mensaje=document.getElementById('mensaje')
+const formulario=document.querySelector('.seccion-comentario')
+
+
+mensaje.addEventListener('input',leerMensaje)
+formulario.addEventListener('submit',validarFormulario)
+
+var seccionMensaje = { 
+    mensaje:''
+};
+
+function leerMensaje(evento){
+    seccionMensaje.mensaje=evento.target.value;
+    console.log(seccionMensaje);
+}
+
+function mostrarMensajeError(mensaje) {
+    const bloqueError=document.createElement('p');
+    bloqueError.textContent=mensaje;
+    bloqueError.classList.add('mensajeError');
+    formulario.appendChild(bloqueError);
+    setTimeout(function(){
+        bloqueError.remove();
+    }, 5000 );
+}
+
+function mostrarMensajeOk(mensaje) {
+    const bloqueok=document.createElement('p');
+    bloqueok.textContent=mensaje;
+    bloqueok.classList.add('mensajeOk');
+    formulario.appendChild(bloqueok);
+    setTimeout(function(){
+        bloqueok.remove();
+    }, 5000 );
+}
+
+function mostrarMensaje(mensaje,bandera){
+    const bloque=document.createElement('p');
+    bloque.textContent=mensaje;
+    if(bandera==='correcto'){
+        bloque.classList.add('mensajeOk');
+    } else {
+        bloque.classList.add('mensajeError');
+    }
+    formulario.appendChild(bloque)
+
+    setTimeout(function(){
+        bloque.remove();
+    }, 5000 );
+}
+
+function validarFormulario(evento) {
+    evento.preventDefault();
+    if(seccionMensaje.mensaje===''){
+        mostrarMensaje("No has ingresado un comentarios que ofrecer");
+        return;
+    }
+    mostrarMensaje("Gracias por su comentario, lo tendremos en cuenta.")
+}
+
+
