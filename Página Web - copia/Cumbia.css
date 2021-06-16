@@ -31,17 +31,6 @@ img {
     border-radius: 40%;
 	
 }
-img.guitarra {
-	height: 100%;
-	width: 100%;           
-	object-fit: cover;
-	height: 173px;
-	width: 301px;
-	margin-bottom: 20px;
-    margin:0 auto;
-	border-radius: 10px;
-    
-}
 p {
 	color: black;
 	font-size: 1.4rem;
@@ -49,9 +38,10 @@ p {
 	line-height: 2.5rem;
 	font-weight: 300;
 	letter-spacing: .05rem;
+	text-align: center;
 }
 #services p.que_es{
-	color: black;
+	color:#1f363d;
 	font-size: 2rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
@@ -61,14 +51,15 @@ p {
 }
 #services p.subtitulo{
 	font-size: 2rem;
+	color: #1f363d;
 }
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
-	color:#000000 ;
+	color: red ;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-	letter-spacing: .2rem;
+	letter-spacing: .1rem;
 	text-align: center;
 }
 .section-title span {
@@ -79,6 +70,7 @@ p {
 	font-size: 3rem;
 	text-transform: uppercase;
 	color: rgb(255, 255, 255);
+	text-align: center;
 }
 .brand h1 span {
 	color: rgb(100, 236, 207);
@@ -292,7 +284,6 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	
 }
 
 /* titulos y contenido de las bandas (cards) */
@@ -325,10 +316,17 @@ p {
 	border-color:#000000 ;
 }
 #services #canciones .service-bottom .service-item h2.titulocancion{
-	 color:#ee4242 ;
+	 color:#2dfd80 ;
+	 text-align: center;
  }
-
+  
 /* ---------- */
+/*dark-moon*/
+.dark-mode {
+    background: black;
+    color: white;
+}
+/*fin-dark-moon*/
 /* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -346,6 +344,7 @@ p {
 	letter-spacing: .1rem;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	text-align: center;
 }
 #footer .social-icon {
 	display: flex;
@@ -415,9 +414,7 @@ p {
 		font-size: 7rem;
 	}
 	/* End Hero */
-
-
-
+                                                            
 	/* contact  */
 	#contact .contact {
 		flex-direction: column;
