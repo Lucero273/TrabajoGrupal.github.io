@@ -59,3 +59,52 @@ menu_item.forEach((item) =>{
         mobile_menu.classList.toggle('active');
     });
 });
+
+function pintar1(){
+    document.getElementById("boton1").style.backgroundColor="#F8DE7E";
+    document.getElementById("boton1").style.color="black";
+}
+function noPintar1(){
+    document.getElementById("boton1").style.backgroundColor="#cb3234";
+    document.getElementById("boton1").style.color="white";
+}
+function pintar2(){
+    document.getElementById("boton2").style.backgroundColor="#F8DE7E";
+    document.getElementById("boton2").style.color="black";
+}
+function noPintar2(){
+    document.getElementById("boton2").style.backgroundColor="#cb3234";
+    document.getElementById("boton2").style.color="white";
+}
+function pintar3(){
+    document.getElementById("boton3").style.backgroundColor="#F8DE7E";
+    document.getElementById("boton3").style.color="black";
+}
+function noPintar3(){
+    document.getElementById("boton3").style.backgroundColor="#cb3234";
+    document.getElementById("boton3").style.color="white";
+}
+function pintar4(){
+    document.getElementById("boton4").style.backgroundColor="#F8DE7E";
+    document.getElementById("boton4").style.color="black";
+}
+function noPintar4(){
+    document.getElementById("boton4").style.backgroundColor="#cb3234";
+    document.getElementById("boton4").style.color="white";
+}
+function pintar5(){
+    document.getElementById("boton5").style.backgroundColor="#F8DE7E";
+    document.getElementById("boton5").style.color="black";
+}
+function noPintar5(){
+    document.getElementById("boton5").style.backgroundColor="#cb3234";
+    document.getElementById("boton5").style.color="white";
+}
+function pintar6(){
+    document.getElementById("boton6").style.backgroundColor="#F8DE7E";
+    document.getElementById("boton6").style.color="black";
+}
+function noPintar6(){
+    document.getElementById("boton6").style.backgroundColor="#cb3234";
+    document.getElementById("boton6").style.color="white";
+}

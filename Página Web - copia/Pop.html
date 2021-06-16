@@ -123,15 +123,27 @@
       <li id="slide6"><img src="https://los40es00.epimg.net/los40/imagenes/2021/03/15/musica/1615787108_291285_1615787223_noticia_normal_amp.jpg" alt=""><p>Taylor Swift</p></li>
     </ul>
     <ul class="menu_slider">
-     <li><a href="#slide1">1</a></li>
-     <li><a href="#slide2">2</a></li>
-     <li><a href="#slide3">3</a></li>
-     <li><a href="#slide4">4</a></li>
-     <li><a href="#slide5">5</a></li>
-     <li><a href="#slide6">6</a></li>
+     <li><a id="boton1" onmouseover="pintar1();" onmouseout="noPintar1();" href="#slide1">1</a></li>
+     <li><a id="boton2" onmouseover="pintar2();" onmouseout="noPintar2();" href="#slide2">2</a></li>
+     <li><a id="boton3" onmouseover="pintar3();" onmouseout="noPintar3();" href="#slide3">3</a></li>
+     <li><a id="boton4" onmouseover="pintar4();" onmouseout="noPintar4();" href="#slide4">4</a></li>
+     <li><a id="boton5" onmouseover="pintar5();" onmouseout="noPintar5();" href="#slide5">5</a></li>
+     <li><a id="boton6" onmouseover="pintar6();" onmouseout="noPintar6();" href="#slide6">6</a></li>
     </ul>
   </div>
 </section>
+<!-----------------seccion comentarios------------------->
+<section id="comentarios">
+  <div class="comentar">
+    <h2>COMENTARIOS</h2>
+    <textarea id="mensaje" class="input-text"></textarea>
+  </div>
+  <div class="enviar">
+    <input id="botonenvio" class="boton" type="sumbit" value="Enviar">
+    <p></p>
+  </div>
+</section>
+<!--------------------fin seccion comentarios-------------------------------->
 <!-----------------footer------------------------->
 <section id="footer">
   <div class="footer container">
