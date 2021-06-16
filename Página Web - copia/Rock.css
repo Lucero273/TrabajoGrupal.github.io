@@ -343,6 +343,20 @@ border: 3px solid white);
 	cursor: pointer;
 }
 
+/* REPRODUCTOR */
+.reproductores{
+	margin-top: 36px;
+	padding: 10px;
+	
+}
+.boton-rep{
+	color: rgb(150, 36, 51);
+	border: none; 
+	font-size: 3em;
+	margin-right: 30px;
+	cursor: pointer;
+	background: none;
+}
 /* Footer */
 .brand h1 {
 	font-size: 3rem;

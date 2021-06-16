@@ -18,6 +18,8 @@ function activarDarkMode() {
     const titulo3 = document.querySelectorAll(".section-title")[2];
     const titulo4 = document.querySelectorAll(".section-title")[3];
     const titulo5 = document.querySelectorAll(".section-title")[4];
+    const titulo6 = document.querySelectorAll(".section-title")[5];
+
     const parrafo1 = document.querySelector("p.que_es");
     const parrafo2 = document.querySelectorAll("p.que_es")[1];
     const subtitulo = document.querySelector(".subtitulo");
@@ -27,6 +29,7 @@ function activarDarkMode() {
     titulo1.classList.toggle('dark-mode');
     titulo4.classList.toggle('dark-mode');
     titulo5.classList.toggle('dark-mode');
+    titulo6.classList.toggle('dark-mode');
     parrafo1.classList.toggle('dark-mode');
     parrafo2.classList.toggle('dark-mode');
     subtitulo.classList.toggle('dark-mode');
@@ -83,3 +86,18 @@ function stopIntervalo(){
 
 btnPlay.addEventListener('click',playIntervalo);
 btnStop.addEventListener('click',stopIntervalo);
+
+
+// REPRODUCTOR
+
+var miVideo = document.getElementById("video1");
+function playPause(){
+    if(miVideo.paused)
+        miVideo.play();
+    else
+       miVideo.pause();
+}
+
+function skip(value){
+    miVideo.currentTime+=value;
+}
