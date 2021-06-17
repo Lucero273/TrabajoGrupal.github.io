@@ -38,6 +38,7 @@
       <h1>DE ESTE</h1>
       <h1>GENERO TAN</h1>
       <h1>POPULAR</h1>
+      <span class="boton-dark-mode"><i class="far fa-moon"></i></span>
     </div>
   </div>
 </section>
@@ -115,12 +116,12 @@
   <div class="conteiner">
     <h1 class="section-title">ARTISTAS MAS INFLUYENTES</h1>
     <ul class="slider">
-      <li id="slide1"><img src="img/maicol.jpg" alt=""><p>Michael Jackson</p></li>
-      <li id="slide2"><img src="img/madonna.jpg" alt=""><p>Madonna</p></li>
-      <li id="slide3"><img src="img/lady gaga.jpg" alt=""><p>Lady Gaga</p></li>
-      <li id="slide4"><img src="img/adele.jpg" alt=""><p>Adele</p></li>
-      <li id="slide5"><img src="img/bruno mars.jpg" alt=""><p>Bruno Mars</p></li>
-      <li id="slide6"><img src="img/Taylor.jpg" alt=""><p>Taylor Swift</p></li>
+      <li id="slide1"><img src="img/maicol.jpg" alt=""><p class="flex-caption">Michael Jackson</p></li>
+      <li id="slide2"><img src="img/madonna.jpg" alt=""><p class="flex-caption">Madonna</p></li>
+      <li id="slide3"><img src="img/lady gaga.jpg" alt=""><p class="flex-caption">Lady Gaga</p></li>
+      <li id="slide4"><img src="img/adele.jpg" alt=""><p class="flex-caption">Adele</p></li>
+      <li id="slide5"><img src="img/bruno mars.jpg" alt=""><p class="flex-caption">Bruno Mars</p></li>
+      <li id="slide6"><img src="img/Taylor.jpg" alt=""><p class="flex-caption">Taylor Swift</p></li>
     </ul>
     <ul class="menu_slider">
      <li><a id="boton1" onmouseover="pintar1();" onmouseout="noPintar1();" href="#slide1">1</a></li>
@@ -134,7 +135,8 @@
 </section>
 <!-----------------seccion comentarios------------------->
 <section id="comentarios">
-  <h2>COMENTARIOS</h2>
+  <h2 id="titulo-coment">COMENTARIOS</h2>
+  <p></p>
   <form class="seccion-comentario">
     <fieldset>
       <textarea id="mensaje" class="input-text" maxlength="100"></textarea>
