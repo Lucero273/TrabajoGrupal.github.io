@@ -9,8 +9,9 @@ function cambiarClase() {
 
 
 
-// DARK MODE
 
+
+// DARK MODE
 function activarDarkMode() {
     const fondoPagina = document.body;
     const titulo1 = document.querySelectorAll(".section-title")[0];
@@ -19,7 +20,6 @@ function activarDarkMode() {
     const titulo4 = document.querySelectorAll(".section-title")[3];
     const titulo5 = document.querySelectorAll(".section-title")[4];
     const titulo6 = document.querySelectorAll(".section-title")[5];
-
     const parrafo1 = document.querySelector("p.que_es");
     const parrafo2 = document.querySelectorAll("p.que_es")[1];
     const subtitulo = document.querySelector(".subtitulo");
@@ -41,6 +41,12 @@ function activarDarkMode() {
 }
 const botonDarkMode = document.querySelector('.boton-dark-mode');
 botonDarkMode.addEventListener('click', activarDarkMode);
+
+
+
+
+
+
 
 //SLIDER
 
@@ -86,6 +92,10 @@ function stopIntervalo(){
 
 btnPlay.addEventListener('click',playIntervalo);
 btnStop.addEventListener('click',stopIntervalo);
+
+
+
+
 
 
 // REPRODUCTOR

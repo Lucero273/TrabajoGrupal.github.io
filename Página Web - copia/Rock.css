@@ -236,7 +236,7 @@ header::after{
 	justify-content: center;
 	flex-direction: column;
 	padding: 30px;
-    border:3px solid white ;
+    /* border:2px solid white ; */
 	background-size: cover;
 	margin: 10px 2%;
 	position: relative;
@@ -261,17 +261,21 @@ header::after{
 }
 #services .service-item{
     background: #191919;
+	box-shadow:  -3px 3px 10px #bebebe, -2px -1px 0px #ffffff;
+	align-items: center;
 }
 #services .service-item h2 {
 	font-size: 2rem;
-	color: #cace79e8 ;
+	color: #48B2B2;
 	margin-bottom: 10px;
     margin-top:12px;
 	text-transform: uppercase; 
+	
 }
 #services .service-item p {
 	color:whitesmoke ;
 	text-align: left;
+	text-align: center;
 }
 /* fin */
 /* fin de la seccion generos */
@@ -279,9 +283,11 @@ header::after{
 
 /* canciones */
 #services #canciones .service-bottom .service-item{
-	border-radius: 60px;
+	border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:   -3px 3px 10px #bebebe, -2px -1px 0px #ffffff;
 	padding:10px;
-	border-color:#ff0707 ;
+	border: none;
 	background:#f7ef9281;
 }
 #canciones .service-item a{
@@ -314,6 +320,7 @@ top:50%;
 transform: translateY(-50%);
 font-size: 3.5em;
 color: whitesmoke;
+cursor: pointer;
 }
 
 .izquierda{
@@ -335,28 +342,84 @@ border: 3px solid white;
 
 /* PLAY STOP */
 #play,#stop{
-	color: rgb(150, 36, 51);
+	color: #48B2B2;
 	font-size: 3em;
-	background: none;
-	border: none;
 	padding: 10px;
+	margin-right: 30px;
+	margin-top: 36px;
+	border: none;
+	background: white;
+	border-radius: 5px;
+    box-shadow:   -3px 3px 10px #bebebe, -2px -1px 0px #ffffff;
 	cursor: pointer;
 }
 
 /* REPRODUCTOR */
 .reproductores{
 	margin-top: 36px;
-	padding: 10px;
-	
 }
 .boton-rep{
-	color: rgb(150, 36, 51);
+	color: #48B2B2;
 	border: none; 
 	font-size: 3em;
 	margin-right: 30px;
 	cursor: pointer;
-	background: none;
+	padding: 10px;
+	background: white;
+	border-radius: 5px;
+    box-shadow:   -3px 3px 10px #bebebe, -2px -1px 0px #ffffff;
 }
+/* COMENTARIOS */
+
+#comentarios{
+	background-color: #f5f3b0;
+	width: 75%;
+	margin: 0 auto;
+	border-radius: 1.5rem;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	height: 250%;
+	box-sizing: inherit;
+}
+.input-text{
+	width: min(60rem, 100%);
+	padding: 2rem;
+	border: none;
+	border-radius: 5px;
+    box-shadow:   -3px 3px 10px #353434, -2px -1px 0px #ffffff;
+	height: 300px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	box-sizing: inherit;
+	overflow: hidden;
+}
+
+.boton{
+	display: flex;
+	margin: 0 auto;
+	margin-bottom:80px;
+	font-size: 190%;
+	padding: 1.5rem;
+	background-color: #f1edb5;
+	border: none;
+	border-radius: 5px;
+}
+fieldset{
+	border: none;
+}
+
+p.comment{
+	font-size: 3.5em;
+	margin: 20px;
+	margin-top: 100px;
+	color: #ee4242;
+	font-weight: 15px;
+	text-align: center;
+}
+
+
 /* Footer */
 .brand h1 {
 	font-size: 3rem;
