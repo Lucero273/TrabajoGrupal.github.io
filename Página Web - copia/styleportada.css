@@ -488,6 +488,61 @@ p {
 	font-weight: 500;
 }
 
+/* SECCION FORMULARIO */
+
+#contacto{
+	width: 70%;
+	margin: 0 auto;
+}
+.formulario-contacto{
+	text-align: left;
+	width: min(60rem, 100%);
+	padding: 2.5rem;
+	border: none;
+    box-shadow:   -3px 3px 10px #F8E3DD, -2px -1px 0px #ffffff;
+	height: 350px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 80px;
+	box-sizing: inherit;
+	overflow: hidden;
+}
+.campo{
+	font-size: 1.5em;
+	margin: 10px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	
+}
+.input-text{
+	height: 35px;
+    width: min(53rem, 100%);
+	margin:10px;
+}
+.boton{
+	display: flex;
+	padding: 1.5rem;
+	background-color: #4795CE;
+	width: 70%;
+	margin:auto;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+fieldset{
+	border: none;
+}
+.formulario-contacto legend{
+	font-size: 3em;
+	text-align: center;
+	font-weight: bold;
+    color: 	#1B7677;
+	font-family:  'Montserrat', sans-serif;
+	margin-bottom: 30px;
+}
+
 
 /* Footer */
 #footer {
