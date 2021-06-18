@@ -736,3 +736,37 @@ fieldset{
 	}
 }
 /* fin del footer */
+/*switch*/
+.dark-mode {
+    background: black;
+    color: white;
+}
+.formulario-dark-mode {
+    background: var(--oscuro);
+}
+
+.sombra-dark-mode {
+    -webkit-box-shadow: -2px 9px 40px -15px rgba(255,255,255,1);
+    -moz-box-shadow: -2px 9px 40px -15px rgba(255,255,255,1);
+    box-shadow: -2px 9px 40px -15px rgba(255,255,255,1);
+}
+/*end-switch*/
+.boton-dark-mode{
+	text-align: center;
+}
+.fa-moon {
+    cursor: pointer;
+}
+.dark-mode {
+    background: black;
+    color: white;
+}
+.formulario-dark-mode {
+    background: var(--oscuro);
+}
+
+.sombra-dark-mode {
+    -webkit-box-shadow: -2px 9px 40px -15px rgba(255,255,255,1);
+    -moz-box-shadow: -2px 9px 40px -15px rgba(255,255,255,1);
+    box-shadow: -2px 9px 40px -15px rgba(255,255,255,1);
+}
