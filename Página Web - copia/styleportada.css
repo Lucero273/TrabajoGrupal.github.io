@@ -500,7 +500,7 @@ p {
 	padding: 2.5rem;
 	border: none;
     box-shadow:   -3px 3px 10px #F8E3DD, -2px -1px 0px #ffffff;
-	height: 350px;
+	height: 450px;
 	display: block;
 	margin: 0 auto;
 	margin-top: 5px;
@@ -521,15 +521,17 @@ p {
 	margin:10px;
 }
 .boton{
-	display: flex;
+	display: block;
 	padding: 1.5rem;
 	background-color: #4795CE;
 	width: 70%;
-	margin:auto;
+	margin: 0 auto;
 	border: none;
 	border-radius: 5px;
 	color: #fff;
 	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 fieldset{
 	border: none;
@@ -753,3 +755,28 @@ fieldset{
 	}
 }
 /* fin del footer */
+
+
+.mensajeOk{
+	background-color: lightgreen;
+	color: white;
+	width: 60%;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	height: 60px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mensajeError{
+	background-color:#FF0000;
+	color: white;
+	width: 60%;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	height: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

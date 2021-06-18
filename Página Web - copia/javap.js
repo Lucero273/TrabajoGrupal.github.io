@@ -168,10 +168,27 @@ function mostrarMensaje(mensaje,bandera){
 function validarFormulario(evento) {
     evento.preventDefault();
     if(seccionMensaje.mensaje===''){
-        mostrarMensaje("No has ingresado un comentarios que ofrecer");
+        mostrarMensajeError("No has ingresado un comentarios que ofrecer");
         return;
     }
-    mostrarMensaje("Gracias por su comentario, lo tendremos en cuenta.")
+    mostrarMensajeOk("Gracias por su comentario, lo tendremos en cuenta.")
 }
 
+//Inicion del dark mode//
+function activarDarkMode(){
+    const fondoWeb=document.body;
+    const mainContenedor=document.querySelector('main.contenedor');
+
+    fondoWeb.classList.toggle("dark-mode");
+    mainContenedor.classList.toggle("dark-mode");
+    mainContenedor.classList.toggle('sombra-dark.mode');
+    formulario.classList.toggle('formulario-dark-mode');
+}
+
+const botonDarkMode=document.querySelector('.boton-dark-mode');
+botonDarkMode.addEventListener('click',activarDarkMode);
+
+if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+    activarDarkMode();
+}
 
