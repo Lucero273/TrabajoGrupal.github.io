@@ -173,22 +173,69 @@ function validarFormulario(evento) {
     }
     mostrarMensajeOk("Gracias por su comentario, lo tendremos en cuenta.")
 }
+//fin de seccion comentarios//
 
 //Inicion del dark mode//
 function activarDarkMode(){
     const fondoWeb=document.body;
-    const mainContenedor=document.querySelector('main.contenedor');
+    const letras=document.querySelectorAll('.section-title')[0];
+    const letras1=document.querySelectorAll('.section-title')[2];
+    const letras2=document.querySelectorAll('.section-title')[1];
+    const sub=document.querySelectorAll('.subtitulo')[0];
+    const sub1=document.querySelectorAll('.subtitulo')[1];
+    const texto=document.querySelector('.que_es')
+    const slider=document.querySelector('.slider')
+    const menuSlider=document.querySelectorAll('.flex-caption')[0]
+    const menuSlider1=document.querySelectorAll('.flex-caption')[1]
+    const menuSlider2=document.querySelectorAll('.flex-caption')[2]
+    const menuSlider3=document.querySelectorAll('.flex-caption')[3]
+    const menuSlider4=document.querySelectorAll('.flex-caption')[4]
+    const menuSlider5=document.querySelectorAll('.flex-caption')[5]
+    const formulario=document.querySelector('.seccion-comentario')
+    const subt=document.querySelector('.sub')
+    const bloque=document.querySelector('.service-bottom')
+    const bloque1=document.querySelectorAll('.service-item')[0]
+    const bloque2=document.querySelectorAll('.service-item')[1]
+    const bloque3=document.querySelectorAll('.service-item')[2]
+    const bloque4=document.querySelectorAll('.service-item')[3]
+    const bloque5=document.querySelectorAll('.service-item')[4]
+    const bloque6=document.querySelectorAll('.service-item')[5]
+
+    const header=document.querySelectorAll('.header' ,'.container')
+    const footer=document.querySelector('.food')
 
     fondoWeb.classList.toggle("dark-mode");
-    mainContenedor.classList.toggle("dark-mode");
-    mainContenedor.classList.toggle('sombra-dark.mode');
-    formulario.classList.toggle('formulario-dark-mode');
+    letras.classList.toggle("dark-mode");
+    letras1.classList.toggle("dark-mode");
+    letras2.classList.toggle("dark-mode");
+    sub.classList.toggle("dark-mode");
+    sub1.classList.toggle("dark-mode");
+    texto.classList.toggle("dark-mode");
+    slider.classList.toggle("dark-mode");
+    menuSlider.classList.toggle("letras-dark-mode");
+    menuSlider1.classList.toggle("letras-dark-mode");
+    menuSlider2.classList.toggle("letras-dark-mode");
+    menuSlider3.classList.toggle("letras-dark-mode");
+    menuSlider4.classList.toggle("letras-dark-mode");
+    menuSlider5.classList.toggle("letras-dark-mode");
+    formulario.classList.toggle("le-dark-mode")
+    subt.classList.toggle("dark-mode")
+    bloque.classList.toggle("dark-mode")
+    bloque1.classList.toggle("le-dark-mode")
+    bloque2.classList.toggle("le-dark-mode")
+    bloque3.classList.toggle("le-dark-mode")
+    bloque4.classList.toggle("le-dark-mode")
+    bloque5.classList.toggle("le-dark-mode")
+    bloque6.classList.toggle("le-dark-mode")
+
+    header.classList.toggle("head-dark-mode")
+    footer.classList.toggle("head-dark-mode")
+
 }
+const botonDarkMode =document.querySelector('.boton-dark-mode');
+botonDarkMode.addEventListener('click', activarDarkMode)
 
-const botonDarkMode=document.querySelector('.boton-dark-mode');
-botonDarkMode.addEventListener('click',activarDarkMode);
-
-if (window.matchMedia('(prefers-color-scheme: dark)').matches){
-    activarDarkMode();
-}
-
+//if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+  //  activarDarkMode();
+//}
+//fin de seccion dark mode//

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styless.css">
+    <script src="https://kit.fontawesome.com/da41e940df.js" crossorigin="anonymous"></script>
     <title>Genero Pop</title>
     <link rel="shortcut icon" href="img/musical.png">
 
@@ -21,7 +22,7 @@
           <div class="menu_generos"><div class="bar"></div></div>
           <ul>
             <li><a id="titulo1" onmouseover="cambiarColor1();" onmouseout="vuelveColor1();" href="index.html" data-after="Home">Inicio</a></li>
-            <li><a id="titulo2" onmouseover="cambiarColor2();" onmouseout="vuelveColor2();" href="Salsa.html" data-after="Service">Salsa</a></li>
+            <li><a id="titulo2" onmouseover="cambiarColor2();" onmouseout="vuelveColor2();" href="Cumbia.html" data-after="Service">Cumbia</a></li>
             <li><a id="titulo3" onmouseover="cambiarColor3();" onmouseout="vuelveColor3();" href="Rock.html" data-after="Projects">Rock</a></li>
             <li><a id="titulo4" onmouseover="cambiarColor4();" onmouseout="vuelveColor4();" href="Reggae.html" data-after="Contact">Reggae</a></li>
           </ul>
@@ -38,7 +39,7 @@
       <h1>DE ESTE</h1>
       <h1>GENERO TAN</h1>
       <h1>POPULAR</h1>
-      <span class="boton-dark-mode"><i class="far fa-moon"></i></span>
+      <li><a class="boton-dark-mode"><i class="fas fa-adjust"></i></a></li>
     </div>
   </div>
 </section>
@@ -67,7 +68,7 @@
     </div>
    </div>
 </section>
-<iframe class="video" width="600" height="400" src="https://www.youtube.com/embed/DUinEl_Eu_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="video" class="video" width="600" height="400" src="https://www.youtube.com/embed/DUinEl_Eu_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <section id="services">
   <div class="services container">
     <div class="service-top">
@@ -76,34 +77,35 @@
     </div>
     <div class="service-bottom">
       <div class="service-item">
-        <div class="icon"><img src="" alt=""></div>
-        <h2></h2>
-        <p></p>
+        <div class="icon"><img src="img/thriller.jpg" alt=""></div>
+        <h2>'Thriller'</h2>
+        <p>Michael Jackson</p>
       </div>
       <div class="service-item">
-        <div class="icon"><img src="" alt=""></div>
-        <h2></h2>
-        <p></p>
+        <div class="icon"><img src="img/like.jpg" alt=""></div>
+        <h2>'Like a Prayer'</h2>
+        <p>Madonna</p>
       </div>
       <div class="service-item">
-        <div class="icon"><img src="" alt=""></div>
-        <h2></h2>
-        <p></p>
+        <div class="icon"><img src="img/poker.jpg" alt=""></div>
+        <h2>'Poker Face'</h2>
+        <p>Lady Gaga</p>
       </div>
       <div class="service-item">
-        <div class="icon"><img src="" alt=""></div>
-        <h2></h2>
-        <p></p>
+        <div class="icon"><img src="img/uptown.jpg" alt=""></div>
+        <h2>'Uptown Funk'</h2>
+        <p>Mark Ronson y Bruno Mars</p>
       </div>
       <div class="service-item">
-        <div class="icon"><img src="" alt=""></div>
-        <h2></h2>
-        <p></p>
+        <div class="icon"><img src="img/rolling.jpg" alt=""></div>
+        <h2>'Rolling in the Deep'</h2>
+        <p>Adele</p>
       </div>
       <div class="service-item">
-        <div class="icon"><img src="" alt=""></div>
-        <h2></h2>
-        <p></p>
+        <div class="icon"><img src="img/lucky.png" alt=""></div>
+        <h2>'Get Lucky'</h2>
+        <p>Daft Punk</p>
+
       </div>
       </div>
       </div>
@@ -116,12 +118,12 @@
   <div class="conteiner">
     <h1 class="section-title">ARTISTAS MAS INFLUYENTES</h1>
     <ul class="slider">
-      <li id="slide1"><img src="img/maicol.jpg" alt=""><p class="flex-caption">Michael Jackson</p></li>
-      <li id="slide2"><img src="img/madonna.jpg" alt=""><p class="flex-caption">Madonna</p></li>
-      <li id="slide3"><img src="img/lady gaga.jpg" alt=""><p class="flex-caption">Lady Gaga</p></li>
-      <li id="slide4"><img src="img/adele.jpg" alt=""><p class="flex-caption">Adele</p></li>
-      <li id="slide5"><img src="img/bruno mars.jpg" alt=""><p class="flex-caption">Bruno Mars</p></li>
-      <li id="slide6"><img src="img/Taylor.jpg" alt=""><p class="flex-caption">Taylor Swift</p></li>
+      <li id="slide1"><img src="img/maicol.jpg" alt=""><p class="flex-caption"></p><b>Michael Jackson</b></li>
+      <li id="slide2"><img src="img/madonna.jpg" alt=""><p class="flex-caption"></p><b>Madonna</b></li>
+      <li id="slide3"><img src="img/lady gaga.jpg" alt=""><p class="flex-caption"></p><b>Lady Gaga</b></li>
+      <li id="slide4"><img src="img/adele.jpg" alt=""><p class="flex-caption"></p><b>Adele</b></li>
+      <li id="slide5"><img src="img/bruno mars.jpg" alt=""><p class="flex-caption"></p><b>Bruno Mars</b></li>
+      <li id="slide6"><img src="img/Taylor.jpg" alt=""><p class="flex-caption"></p><b>Taylor Swift</b></li>
     </ul>
     <ul class="menu_slider">
      <li><a id="boton1" onmouseover="pintar1();" onmouseout="noPintar1();" href="#slide1">1</a></li>
@@ -135,8 +137,7 @@
 </section>
 <!-----------------seccion comentarios------------------->
 <section id="comentarios">
-  <h2 id="titulo-coment">COMENTARIOS</h2>
-  <p></p>
+  <h2 id="titulo-coment" class="sub">COMENTARIOS</h2>
   <form class="seccion-comentario">
     <fieldset>
       <textarea id="mensaje" class="input-text" maxlength="100"></textarea>
@@ -148,7 +149,7 @@
 </section>
 <!--------------------fin seccion comentarios-------------------------------->
 <!-----------------footer------------------------->
-<section id="footer">
+<section id="footer" class="food">
   <div class="footer container">
     <div class="brand"><h1><span>LA</span> LA<span>LAND</span>MUSIC</h1></div>
     <h2>El poder de la musica</h2>
