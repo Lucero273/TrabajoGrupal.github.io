@@ -200,6 +200,7 @@ function activarDarkMode(){
     const bloque4=document.querySelectorAll('.service-item')[3]
     const bloque5=document.querySelectorAll('.service-item')[4]
     const bloque6=document.querySelectorAll('.service-item')[5]
+    const boto=document.querySelector('.enviar')
 
     const header=document.querySelectorAll('.header' ,'.container')
     const footer=document.querySelector('.food')
@@ -218,8 +219,8 @@ function activarDarkMode(){
     menuSlider3.classList.toggle("letras-dark-mode");
     menuSlider4.classList.toggle("letras-dark-mode");
     menuSlider5.classList.toggle("letras-dark-mode");
-    formulario.classList.toggle("le-dark-mode")
-    subt.classList.toggle("dark-mode")
+    formulario.classList.toggle("la-dark-mode")
+    subt.classList.toggle("la-dark-mode")
     bloque.classList.toggle("dark-mode")
     bloque1.classList.toggle("le-dark-mode")
     bloque2.classList.toggle("le-dark-mode")
@@ -227,6 +228,7 @@ function activarDarkMode(){
     bloque4.classList.toggle("le-dark-mode")
     bloque5.classList.toggle("le-dark-mode")
     bloque6.classList.toggle("le-dark-mode")
+    boto.classList.toggle("li-dark-mode")
 
     header.classList.toggle("head-dark-mode")
     footer.classList.toggle("head-dark-mode")
