@@ -111,3 +111,53 @@ function playPause(){
 function skip(value){
     miVideo.currentTime+=value;
 }
+
+
+
+
+
+// Sección comentarios
+
+var comentarios={
+    mensaje:''
+} 
+// evento submit
+const seccionComentario = document.querySelector('.seccion-comentario');
+const ok = document.querySelector('#ok');  //hacemos referencia al elemento al que le agregaremos el bloqueok
+
+const mensaje=document.getElementById('mensaje'); //hacemos referencia desde html y le asignamos la constante 'mensaje'
+mensaje.addEventListener('input',leerTexto);  //estamos pendientes de un input en el campo mensaje
+
+// guardamos la información respectiva en el campo mensaje, también lo imprimimos en consola
+function leerTexto(evento){
+    comentarios.mensaje =evento.target.value;
+    evento.preventDefault()
+    console.log(comentarios.mensaje);
+}
+
+//creamos un parrafo desde java para agregar el mensaje de bloqueOk
+function mensajeOk(mensajeEnviado){
+    const bloqueOk=document.createElement('p');
+    bloqueOk.textContent=mensajeEnviado;
+    ok.appendChild(bloqueOk);
+    setTimeout(function(){
+        bloqueOk.remove();
+    }, 5000);
+}
+
+//Estamos pendientes del evento submit del botón enviar de la seccion comentarios
+seccionComentario.addEventListener('submit', validarMensaje);
+function validarMensaje(evento){
+    evento.preventDefault();
+    if(comentarios.mensaje===''){
+        window.alert('El campo "comentarios" está vacío.');
+        return;
+    }
+    mensajeOk('Tu comentario se envió correctamente!');
+}
+
+
+
+
+
+

@@ -371,15 +371,15 @@ border: 3px solid white;
 }
 /* COMENTARIOS */
 
-#comentarios{
-	background-color: #f5f3b0;
-	width: 75%;
+.seccion-comentario{
+	/* background-color: #f5f3b0;
+	width: 75%; */
 	margin: 0 auto;
 	border-radius: 1.5rem;
 	margin-bottom: 25px;
 	margin-top: 25px;
-	height: 250%;
-	box-sizing: inherit;
+	/* height: 250%;
+	box-sizing: inherit; */
 }
 .input-text{
 	width: min(60rem, 100%);
@@ -418,8 +418,11 @@ p.comment{
 	font-weight: 15px;
 	text-align: center;
 }
-
-
+.mensajeOk{
+	text-align: center;
+	margin-bottom: 7px;
+	font-family: 'Montserrat', sans-serif;
+}
 /* Footer */
 .brand h1 {
 	font-size: 3rem;
