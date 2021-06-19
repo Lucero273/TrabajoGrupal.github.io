@@ -34,7 +34,6 @@ function Prev() {
         slider.style.marginLeft = "-100%";
     }), 500;
 }
-
 //hamburger//
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
@@ -59,45 +58,33 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+//hamburger//
+const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const header = document.querySelector('.header.container');
 
-//DarkMode//
-function activarDarkMode() {
-    const fondoPagina = document.body;
-    const titulo1 = document.querySelectorAll(".section-title")[0];
-    const titulo2 = document.querySelectorAll(".section-title")[1];
-    const titulo3 = document.querySelectorAll(".section-title")[2];
-    const titulo4 = document.querySelectorAll(".section-title")[3];
-    const titulo5 = document.querySelectorAll(".section-title")[4];
-    const titulo6 = document.querySelectorAll(".section-title")[5];
-    const parrafo1 = document.querySelector("p.que_es");
-    const parrafo2 = document.querySelectorAll("p.que_es")[1];
-    const subtitulo = document.querySelector(".subtitulo");
-    const subtitulo2 = document.querySelectorAll(".subtitulo")[1];
-    const subtitulo3 = document.querySelectorAll(".subtitulo")[2];
-
-    titulo1.classList.toggle('dark-mode');
-    titulo4.classList.toggle('dark-mode');
-    titulo5.classList.toggle('dark-mode');
-    titulo6.classList.toggle('dark-mode');
-    parrafo1.classList.toggle('dark-mode');
-    parrafo2.classList.toggle('dark-mode');
-    subtitulo.classList.toggle('dark-mode');
-    subtitulo2.classList.toggle('dark-mode');
-    subtitulo3.classList.toggle('dark-mode');
-    titulo2.classList.toggle('dark-mode');
-    titulo3.classList.toggle('dark-mode');
-    fondoPagina.classList.toggle('dark-mode');
-}
-const botonDarkMode = document.querySelector('.boton-dark-mode');
-botonDarkMode.addEventListener('click', activarDarkMode);
-
-function imprimirConsola() {
-    console.log("La pagina esta cargada");
-} 
-
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+	mobile_menu.classList.toggle('active');
+});
+document.addEventListener('scroll', () => {
+	var scroll_position = window.scrollY;
+	if (scroll_position > 250) {
+		header.style.backgroundColor = '#29323c';
+	} else {
+		header.style.backgroundColor = 'transparent';
+	}
+});
+menu_item.forEach((item) => {
+	item.addEventListener('click', () => {
+		hamburger.classList.toggle('active');
+		mobile_menu.classList.toggle('active');
+	});
+});
 //seccion-comentario//
-const mensaje=document.getElementById('mensaje')
-const formulario=document.querySelector('.seccion-comentario')
+const mensaje=document.getElementById('comentario')
+const formulario=document.querySelector('.formulario-contacto')
 
 
 mensaje.addEventListener('input',leerMensaje)
@@ -155,24 +142,3 @@ function validarFormulario(evento) {
     }
     mostrarMensajeOk("Gracias por su comentario, lo tendremos en cuenta.")
 }
-
-//Inicion del dark mode//
-function activarDarkMode() {
-    
-    //Referencia al body de la página web, para poder cambiar su background color
-    const fondoWeb=document.body;
-    const mainContenedor=document.querySelector('main.contenedor'); //le estoy diciendo que haga referencia a un <main class="contenedor">...</main>
-    
-    fondoWeb.classList.toggle("dark-mode");
-    mainContenedor.classList.toggle("dark-mode");
-    mainContenedor.classList.toggle('sombra-dark-mode');
-    formulario.classList.toggle('formulario-dark-mode');
-}
-
-const botonDarkMode=document.querySelector('.boton-dark-mode');
-botonDarkMode.addEventListener('click',activarDarkMode);
-
-if (window.matchMedia('(prefers-color-scheme: dark)').matches){
-    activarDarkMode();
-}
-
