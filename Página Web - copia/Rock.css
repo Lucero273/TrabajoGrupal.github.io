@@ -4,7 +4,8 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-/* modificación general del html */
+/* MODIFICACIÓN GENERAL DEL HTML */
+
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
@@ -12,12 +13,14 @@ html {
     background-color: #ffffff;
 }
 
-/* links sin decoración */
+/* LINK SIN DECORACIÓN */
+
 a {
 	text-decoration: none;
 }
-/* ---------- */
-/* EL OCNTENIDO DE LAS SECCIONES (TAMAÑO DE CADA SECCIÓN */
+
+/* EL CONTENIDO DE LAS SECCIONES (TAMAÑO DE CADA SECCIÓN) */
+
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -70,7 +73,6 @@ p {
 	font-weight: 300;
 	color:#000000 ;
 	margin-bottom: 10px;
-	/* text-transform: uppercase; */
 	letter-spacing: .1rem;
 	text-align: center;
 }
@@ -78,7 +80,8 @@ p {
 	color: #ee4242;
 }
 
-/* Sección del header */
+/* SECCIÓN DEL HEADER */
+
 .navegacion{
     width: 100%;
 }
@@ -93,16 +96,18 @@ header::after{
     display: block;
 }
  /* LOGO DE LA PÁGINA */
+
 .logo{
     color: rgb(255, 255, 255);
     float: left;
-    font-size: 3.5rem;
-    padding-left: 40px;
+    font-size: 3rem;
+    padding-left: 24px;
 }
 .logo span{
     color:rgb(100, 236, 207);
 }
 /* DESPLIEGUE DEL MENU  */
+
 .menu-principal{
     top: 100%;
     right: 0;
@@ -130,6 +135,7 @@ header::after{
 	text-align: center;
 }
 /* HOVER Y ANIMACIÓN DE LOS ITEMS DEL MENU (JS)*/
+
 .menu-principal a:hover,
 .menu-principal a:focus{
     background: rgba(100,236,207,.5);
@@ -166,10 +172,11 @@ header::after{
 .hamburger::after{
     transform:translateY(3px);
 }
-/* Fin de la seccion del header */
+/* FIN DE LA SECCION DEL HEADER */
 
 
-/* sección principal */
+/* SECCIÓN PRINCIPAL */
+
 #hero {
 	background-image: url(./img/rock.jpg);
 	background-size: cover;
@@ -197,20 +204,22 @@ header::after{
 }
 
 
-/* titulo principal y tamaño en cel */
+/* TITULO PRINCIPAL Y TAMAÑO EN CEL */
+
 #hero h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
 	position: relative;
-    color:#Fff;	
+    color:#fff;	
 }
-/* fin */
-/* fin de la sección principal */
+/* FIN */
+/* FIN DE LA SECCIÓN PRINCIPAL */
 
 
-/* seccion generos */
-/* orden de las cards */
+/*---------------------------- SECCIÓN GENEROS------------------------------- */
+/* ORDEN DE LAS CARDS */
+
 #services .services {
 	flex-direction: column;
 	text-align: center;
@@ -221,6 +230,7 @@ header::after{
 #services .service-top {
 	max-width: 1000px;
 	margin: 0 auto;
+	width: 100%;
 }
 #services .service-bottom {
 	display: flex;
@@ -252,7 +262,8 @@ header::after{
 	width: 100%; */
 }
 
-/* titulos y contenido de las bandas (cards) */
+/* TITULOS Y CONTENIDO DE LAS BANDAS (CARDS) */
+
 #services .service-bottom .icon {
 	height: 90px;
 	width: 100px;
@@ -277,11 +288,12 @@ header::after{
 	text-align: left;
 	text-align: center;
 }
-/* fin */
-/* fin de la seccion generos */
+/* FIN */
+/* FIN DE LA SECCIÓN GÉNEROS */
 
 
-/* canciones */
+/* CANCIONES */
+
 #services #canciones .service-bottom .service-item{
 	border-radius: 50px;
     background: #e0e0e0;
@@ -305,6 +317,7 @@ header::after{
 /* ---------- */
 
 /* SLIDER */
+
 .slider{
 	max-width: 100%;
 	max-height: 100vh;
@@ -341,6 +354,7 @@ border: 3px solid white;
 }
 
 /* PLAY STOP */
+
 #play,#stop{
 	color: #48B2B2;
 	font-size: 3em;
@@ -355,6 +369,7 @@ border: 3px solid white;
 }
 
 /* REPRODUCTOR */
+
 .reproductores{
 	margin-top: 36px;
 }
@@ -369,6 +384,8 @@ border: 3px solid white;
 	border-radius: 5px;
     box-shadow:   -3px 3px 10px #bebebe, -2px -1px 0px #ffffff;
 }
+
+
 /* COMENTARIOS */
 
 .seccion-comentario{
@@ -423,7 +440,10 @@ p.comment{
 	margin-bottom: 7px;
 	font-family: 'Montserrat', sans-serif;
 }
+
+
 /* Footer */
+
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -469,10 +489,11 @@ p.comment{
 	color: white;
 	font-size: 1.3rem;
 }
-/* End Footer */
+/* FINAL DE FOOTER */
 
 
-/* Keyframes */
+/* KEYFRAMES */
+
 @keyframes menu_generos_puls {
 	0% {
 		opacity: 1;
@@ -504,10 +525,11 @@ p.comment{
 		font-weight: 500;
 	}
 }
-/* End Keyframes */
+/* END KEYFRAMES */
 
 
-/* Media Query para Tablet */
+/* MEDIA QUERY PARA TABLET */
+
 @media only screen and (min-width: 768px) {
 	
 	h1.section-title {
@@ -520,7 +542,7 @@ p.comment{
 	}
 }
 
-@media(min-width:910px){
+@media(min-width:768px){
     .menu-toggle{
         display: none;
     }
@@ -561,5 +583,34 @@ p.comment{
         margin: 10px 2%;
         flex-basis: 80%;
     }
+	.hero.container{
+		width: 100%;
+	}
+	img.guitarra{
+		width: 100%;
+		margin: 10px;
+		width: 80%;
+		font-size: 1.5em;
+	}
+	video, .seccion-comentario{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.section-title, p.comment{
+		font-size: 2em;
+		text-align: center;
+	}
+	.slider{
+		height: 50vh;
+	}
+	#services p.que_es, #canciones .service-item a{
+		font-size: 15px;
+	}
+	#services .services{
+		padding: 20px 0;
+	}
+	.container{
+		min-height: 83vh;
+	}
 }
-/* fin del footer */
+/* FIN DEL FOOTER */
