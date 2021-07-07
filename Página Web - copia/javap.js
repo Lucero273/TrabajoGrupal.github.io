@@ -237,7 +237,7 @@ function activarDarkMode(){
 const botonDarkMode =document.querySelector('.boton-dark-mode');
 botonDarkMode.addEventListener('click', activarDarkMode)
 
-//if (window.matchMedia('(prefers-color-scheme: dark)').matches){
-  //  activarDarkMode();
-//}
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+   activarDarkMode();
+}
 //fin de seccion dark mode//
