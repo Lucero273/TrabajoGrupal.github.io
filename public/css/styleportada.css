@@ -629,11 +629,29 @@ fieldset{
 	h1.section-title {
 		font-size: 6rem;
 	}
-
+	.container {
+		min-height: 44vh;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#hero .hero{
+		min-height: 100vh;
+	}
+	.brand h1{
+		padding: 15px;
+		font-size: 5em;
+	}
+	#header .nav-list ul a{
+		font-size: 5rem;
+		padding-top: 10rem;
+	}
 	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
 	}
+
 	/* End Hero */
 
 	/* Services Section */
@@ -746,6 +764,9 @@ fieldset{
 	}
 	#header .nav-list ul a:after {
 		display: none;
+	}
+	.brand h1{
+		font-size: 3em;
 	}
 	
 
