@@ -643,10 +643,10 @@ fieldset{
 		padding: 15px;
 		font-size: 5em;
 	}
-	#header .nav-list ul a{
+	/* #header .nav-list ul a{
 		font-size: 5rem;
 		padding-top: 10rem;
-	}
+	} */
 	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
