@@ -81,10 +81,10 @@ p.que_es{
 .brand h1{
     font-size: 3rem;
 	text-transform: uppercase;
-	color: rgb(255, 255, 255);
+	color:rgba(248, 130, 130, 0.61);
 }
 .brand h1 span{
-    color: rgb(100, 236, 207);
+    color:rgb(100, 236, 207) ;
 }
 
 /****************header*****************/
