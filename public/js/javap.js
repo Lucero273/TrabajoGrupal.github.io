@@ -1,13 +1,4 @@
-function imprimirConsola() {
-    console.log("La pagina esta cargada");
-} 
-
-window.addEventListener('load', imprimirConsola);
-
-window.addEventListener('scroll', function(){
-    console.log('scrolling...');
-})
-
+/****************inicio de la interaccion colores de boton**************** */
 function cambiarColor1(){
     document.getElementById("titulo1").style.backgroundColor="white";
     document.getElementById("titulo1").style.color="red";
@@ -109,7 +100,7 @@ function noPintar6(){
     document.getElementById("boton6").style.color="white";
 }
 
-
+/************************end de la seccion colores botones************************** */
 
 
 //-----------------------inicion de la seccion comentarios--------------------------------------//
@@ -258,6 +249,8 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
    activarDarkMode();
 }
 //fin de seccion dark mode//
+
+//
 var swiper = new Swiper(".mySwiper", {
     cssMode: true,
     navigation: {
