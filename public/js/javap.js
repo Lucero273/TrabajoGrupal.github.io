@@ -201,10 +201,18 @@ function activarDarkMode(){
     const bloque5=document.querySelectorAll('.service-item')[4]
     const bloque6=document.querySelectorAll('.service-item')[5]
     const boto=document.querySelector('.enviar')
-
+    const imagines = document.querySelector('.swiper-container mySwiper')
+    const carrusel=document.querySelectorAll('.swiper-slide')[0]
+    const carrusel1=document.querySelectorAll('.swiper-slide')[1]
+    const carrusel2=document.querySelectorAll('.swiper-slide')[2]
+    const carrusel3=document.querySelectorAll('.swiper-slide')[3]
+    const carrusel4=document.querySelectorAll('.swiper-slide')[4]
+    const carrusel5=document.querySelectorAll('.swiper-slide')[5]
+    const carrusel6=document.querySelectorAll('.swiper-slide')[6]
+    const carrusel7=document.querySelectorAll('.swiper-slide')[7]
+    const carrusel8=document.querySelectorAll('.swiper-slide')[8]
     const header=document.querySelectorAll('.header' ,'.container')
     const footer=document.querySelector('.food')
-
     fondoWeb.classList.toggle("dark-mode");
     letras.classList.toggle("dark-mode");
     letras1.classList.toggle("dark-mode");
@@ -213,6 +221,7 @@ function activarDarkMode(){
     sub1.classList.toggle("dark-mode");
     texto.classList.toggle("dark-mode");
     slider.classList.toggle("dark-mode");
+    imagines.classList.toggle("dark-mode")
     menuSlider.classList.toggle("letras-dark-mode");
     menuSlider1.classList.toggle("letras-dark-mode");
     menuSlider2.classList.toggle("letras-dark-mode");
@@ -229,10 +238,17 @@ function activarDarkMode(){
     bloque5.classList.toggle("le-dark-mode")
     bloque6.classList.toggle("le-dark-mode")
     boto.classList.toggle("li-dark-mode")
-
+    carrusel.classList.toggle("dark-mode")
+    carrusel1.classList.toggle("dark-mode")
+    carrusel2.classList.toggle("dark-mode")
+    carrusel3.classList.toggle("dark-mode")
+    carrusel4.classList.toggle("dark-mode")
+    carrusel5.classList.toggle("dark-mode")
+    carrusel6.classList.toggle("dark-mode")
+    carrusel7.classList.toggle("dark-mode")
+    carrusel8.classList.toggle("dark-mode")
     header.classList.toggle("head-dark-mode")
     footer.classList.toggle("head-dark-mode")
-
 }
 const botonDarkMode =document.querySelector('.boton-dark-mode');
 botonDarkMode.addEventListener('click', activarDarkMode)
